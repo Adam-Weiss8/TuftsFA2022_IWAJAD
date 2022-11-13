@@ -7,11 +7,19 @@ using UnityEngine.SceneManagement;
 public class menu_script : MonoBehaviour {
     public GameObject resumeButton;
     public GameObject quitButton;
+    public GameObject startButton;
     // bool gameOver = false;
 
    void start() {
        resumeButton.SetActive(false);
        quitButton.SetActive(false);
+       startButton.SetActive(false);
+       SceneManager.LoadScene("StartScreen");
+   }
+   
+   public void loadFirstLevel() {
+       startButton.SetActive(true);
+       SceneManager.LoadScene("SampleScene");
    }
 
 
@@ -25,15 +33,14 @@ public class menu_script : MonoBehaviour {
    }
 
   public void quitButtonFunc() {
-       // quitButton.SetActive(true);
+       quitButton.SetActive(true);
        // gameOver = true;
-       //load scence
-       #if UNITY_EDITOR 
-           UnityEditor.EditorApplication.isPlaying = false;
-           #else 
-           Application.Quit();
-           #endif
-       
+       SceneManager.LoadScene("StartScreen");
+       // #if UNITY_EDITOR 
+       //     UnityEditor.EditorApplication.isPlaying = false;
+       //     #else 
+       //     Application.Quit();
+       //     #endif
       
    }
     
