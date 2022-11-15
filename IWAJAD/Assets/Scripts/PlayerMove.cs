@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     private float jumpInput;
     public float jumpHeight;
     private bool canJump;
+    public float wallJumpX;
+    public float wallJumpY;
 
     //dash variables
     public float dashSpeed;
@@ -49,25 +51,55 @@ public class PlayerMove : MonoBehaviour
             rb.gravityScale = 1;
         }
 
+        
+
 
     }
 
     private void FixedUpdate()
     {
+        rb.velocity = new Vector2(walkInput * walksp, rb.velocity.y);
+
         if (canJump && jumpInput == 1) {
             rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             canJump = false;
         }
 
-        rb.velocity = new Vector2(walkInput * walksp, rb.velocity.y);
+        
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("ground")) {
             canJump = true;
+            canDash = true;
         }
-        canDash = true;
+
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            //wall jump
+            if(Input.GetAxisRaw("Jump") == 1 && walkInput != 0)
+            {
+                rb.AddForce(new Vector2(wallJumpX * -walkInput, wallJumpY), ForceMode2D.Impulse);
+            }
+
+            if (walkInput != 0)
+            {
+                if (rb.velocity.y < -0.5)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, -0.5f);
+                }
+            }
+        }
+        
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            rb.gravityScale = 1;
+        }
     }
 
     private void Dash()

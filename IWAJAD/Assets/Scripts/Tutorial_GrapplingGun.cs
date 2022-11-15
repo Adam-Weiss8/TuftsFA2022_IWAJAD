@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Tutorial_GrapplingGun : MonoBehaviour
 {
+
+    
+
     [Header("Scripts Ref:")]
     public Tutorial_GrapplingRope grappleRope;
 
