@@ -49,6 +49,8 @@ public class PlayerMove : MonoBehaviour
             rb.gravityScale = 1;
         }
 
+        
+
 
     }
 
@@ -66,8 +68,28 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ground")) {
             canJump = true;
+            canDash = true;
         }
-        canDash = true;
+
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            if (walkInput != 0)
+            {
+                if (rb.velocity.y < -0.5)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, -0.5f);
+                }
+            }
+        }
+        
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            rb.gravityScale = 1;
+        }
     }
 
     private void Dash()
