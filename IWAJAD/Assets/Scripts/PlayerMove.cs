@@ -58,12 +58,14 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+        rb.velocity = new Vector2(walkInput * walksp, rb.velocity.y);
+
         if (canJump && jumpInput == 1) {
             rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             canJump = false;
         }
 
-        rb.velocity = new Vector2(walkInput * walksp, rb.velocity.y);
+        
     }
 
     private void OnCollisionStay2D(Collision2D collision)
