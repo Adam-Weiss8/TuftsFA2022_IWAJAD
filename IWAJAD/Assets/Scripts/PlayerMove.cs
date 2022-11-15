@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     private float jumpInput;
     public float jumpHeight;
     private bool canJump;
+    public float wallJumpX;
+    public float wallJumpY;
 
     //dash variables
     public float dashSpeed;
@@ -73,6 +75,12 @@ public class PlayerMove : MonoBehaviour
 
         if (collision.gameObject.CompareTag("wall"))
         {
+            //wall jump
+            if(Input.GetAxisRaw("Jump") == 1 && walkInput != 0)
+            {
+                rb.AddForce(new Vector2(wallJumpX * -walkInput, wallJumpY), ForceMode2D.Impulse);
+            }
+
             if (walkInput != 0)
             {
                 if (rb.velocity.y < -0.5)
