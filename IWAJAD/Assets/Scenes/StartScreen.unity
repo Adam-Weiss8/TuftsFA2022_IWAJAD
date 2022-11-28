@@ -620,7 +620,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1117062080}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2049867580}
+        m_TargetAssemblyTypeName: menu_script, Assembly-CSharp
+        m_MethodName: Update
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1117062080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,6 +1043,8 @@ MonoBehaviour:
   resumeButton: {fileID: 0}
   quitButton: {fileID: 0}
   startButton: {fileID: 1544115089}
+  levelButton: {fileID: 0}
+  settingButton: {fileID: 0}
 --- !u!4 &2049867581
 Transform:
   m_ObjectHideFlags: 0
