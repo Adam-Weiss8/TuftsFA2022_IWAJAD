@@ -22,6 +22,12 @@ public class PlayerMove : MonoBehaviour
     //player rigidbody
     private Rigidbody2D rb;
 
+    //Animation
+    public Animator anim;
+
+    //Grapple
+    public GameObject grappleHook;
+
 
     void Start()
     {
@@ -33,9 +39,21 @@ public class PlayerMove : MonoBehaviour
    
     void Update()
     {
+        
         //check for input
         walkInput = Input.GetAxis("Horizontal");
         jumpInput = Input.GetAxis("Jump");
+
+        //flip player scale and direction
+        if (walkInput > 0)
+        {
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
+            grappleHook.transform.localScale = new Vector3(1, 1, 1);
+        } else if (walkInput < 0)
+        {
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            grappleHook.transform.localScale = new Vector3(-1, 1, 1);
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && canDash)
         {
@@ -60,10 +78,15 @@ public class PlayerMove : MonoBehaviour
     {
         if (walkInput != 0)
         {
+            anim.SetTrigger("run");
             rb.velocity = new Vector2(walkInput * walksp, rb.velocity.y);
+        } else if(jumpInput == 0)
+        {
+            anim.SetTrigger("idle");
         }
 
         if (canJump && jumpInput == 1) {
+            anim.SetTrigger("jump");
             rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             canJump = false;
         }
@@ -75,7 +98,9 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ground")) {
             canJump = true;
+            
             canDash = true;
+            anim.SetTrigger("idle");
         }
 
         if (collision.gameObject.CompareTag("wall"))
