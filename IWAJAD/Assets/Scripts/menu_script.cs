@@ -9,8 +9,10 @@ public class menu_script : MonoBehaviour { //IPointerEnterHandler, IPointerExitH
     public GameObject resumeButton;
     public GameObject quitButton;
     public GameObject startButton;
+    public GameObject pauseButton;
     public GameObject levelButton;
     public GameObject settingButton;
+
     
     //for Hovering
     public Button button;
@@ -47,6 +49,7 @@ public class menu_script : MonoBehaviour { //IPointerEnterHandler, IPointerExitH
    {
        cb.selectedColor = wantedColor;
        button.colors = cb;
+       // cd.selectedColor;
    }
    
    public void changeWhenLeaves()
