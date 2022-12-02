@@ -15,10 +15,6 @@ public class PlayerMove : MonoBehaviour
     public float wallJumpX;
     public float wallJumpY;
 
-    //dash variables
-    public float dashSpeed;
-    public bool canDash;
-
     //player rigidbody
     private Rigidbody2D rb;
 
@@ -27,13 +23,14 @@ public class PlayerMove : MonoBehaviour
 
     //Grapple
     public GameObject grappleHook;
+    private bool isGrapple;
 
 
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         canJump = true;
-        canDash = true;
+        isGrapple = false;
     }
 
    
@@ -55,9 +52,12 @@ public class PlayerMove : MonoBehaviour
             grappleHook.transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canDash)
+        if (Input.GetAxis("grapple") == 1)
         {
-            Dash();
+            isGrapple = true;
+        } else
+        {
+            isGrapple = false;
         }
 
         //handle gravity based on if the player is rising or falling
@@ -98,8 +98,6 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ground")) {
             canJump = true;
-            
-            canDash = true;
             anim.SetTrigger("idle");
         }
 
@@ -130,24 +128,7 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void Dash()
-    {
-
-        /*
-        Vector2 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 heading = target - rb.position;
-        Vector2 direction = heading / heading.magnitude;
-        Vector2 directionx = new Vector2(direction.x, 0);
-        Vector2 directiony = new Vector2(0, direction.y);
-        rb.AddForce(directionx * dashSpeed, ForceMode2D.Impulse);
-        rb.AddForce(directiony * dashSpeed, ForceMode2D.Impulse);
-
-        canDash = false;
-        */
-
-
-
-    }
+    
 
 
 }
