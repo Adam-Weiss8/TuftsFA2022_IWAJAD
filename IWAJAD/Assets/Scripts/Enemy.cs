@@ -27,7 +27,6 @@ public class Enemy : MonoBehaviour
 		if (health <= 0) {
 			Destroy(gameObject);
 		}	
-        transform.Translate(Vector2.left * speed * Time.deltaTime); 
     }
 	
 	public void TakeDamage(int damage){

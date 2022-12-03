@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour
     private bool canJump;
     public float wallJumpX;
     public float wallJumpY;
+    public float health;
 
     //player rigidbody
     private Rigidbody2D rb;
