@@ -7,7 +7,6 @@ TagManager:
   - ground
   - wall
   - Checkpoint
-  - PauseMenuSlider
   layers:
   - Default
   - TransparentFX
