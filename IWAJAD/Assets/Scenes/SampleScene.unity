@@ -23015,7 +23015,10 @@ MonoBehaviour:
   jumpHeight: 2.5
   wallJumpX: 2
   wallJumpY: 1
+<<<<<<< Updated upstream
   health: 0
+=======
+>>>>>>> Stashed changes
   anim: {fileID: 985337938}
   grappleHook: {fileID: 875100995}
 --- !u!61 &985337937
