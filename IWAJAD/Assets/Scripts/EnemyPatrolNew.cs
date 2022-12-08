@@ -13,6 +13,9 @@ public class EnemyPatrolNew : MonoBehaviour {
        bool isFacingRight = false;
        RaycastHit2D hitDown;
 	   RaycastHit2D hitFwd;
+	   private float dazedTime;
+	   public float startDazedTime;
+
 
        //public int damage = 10;
        //private GameHandler gameHandler;
@@ -30,6 +33,17 @@ public class EnemyPatrolNew : MonoBehaviour {
 	void Update(){
 		hitDown = Physics2D.Raycast(groundCheck.position, -transform.up, rayLength, groundLayer);
 		hitFwd = Physics2D.Raycast(groundCheck.position, -transform.right, rayLength/2, wallLayer);
+
+		if(dazedTime <= 0) {
+			speed = 2f;
+		} else {
+			speed = 0;
+			dazedTime -= Time.deltaTime;
+		}	
+	}
+
+	public void Knockback() {
+		dazedTime = startDazedTime;
 	}
 
 	void FixedUpdate(){
