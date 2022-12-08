@@ -11,6 +11,8 @@ public class AIPatrol : MonoBehaviour
     private bool mustTurn;
     public LayerMask groundLayer;
     public LayerMask walls;
+	
+	public float groundRange = 0.1f;
     public float walkSpeed;
     public Collider2D bodyCollider;
 
@@ -19,22 +21,16 @@ public class AIPatrol : MonoBehaviour
         mustPatrol = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (mustPatrol) {
-            Patrol();
-        }
-    }
 
     void FixedUpdate() {
         if(mustPatrol) {
-            mustTurn = !Physics2D.OverlapCircle(groundCheckPos.position, 0.1f, groundLayer);
+			Patrol();
+            mustTurn = !Physics2D.OverlapCircle(groundCheckPos.position, groundRange, groundLayer);
         }
     }
 
     void Patrol() {
-        if (mustTurn || bodyCollider.IsTouchingLayers(walls)) {
+        if ((mustTurn) || (bodyCollider.IsTouchingLayers(walls))) {
             Flip();
         }
 
@@ -42,9 +38,15 @@ public class AIPatrol : MonoBehaviour
     }
 
     void Flip() {
-        mustPatrol = false;
+        //mustPatrol = false;
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
         walkSpeed *= -1;
-        mustPatrol = true;
+        //mustPatrol = true;
     }
+	
+	void OnDrawGizmosSelected(){
+              Gizmos.DrawWireSphere(groundCheckPos.position, groundRange);
+    }
+	
+	
 }
