@@ -15,6 +15,7 @@ public class EnemyPatrolNew : MonoBehaviour {
 	   RaycastHit2D hitFwd;
 	   private float dazedTime;
 	   public float startDazedTime;
+	   public bool hasNotFoundEdge = true;
 
 
        //public int damage = 10;
@@ -49,11 +50,13 @@ public class EnemyPatrolNew : MonoBehaviour {
 	void FixedUpdate(){
 		     
 		if (hitDown.collider != false){
+			hasNotFoundEdge = false;
 			if (isFacingRight){
 				rb.velocity = new Vector2(speed, rb.velocity.y);
 			} else {
 				rb.velocity = new Vector2(-speed, rb.velocity.y);
 			}
+			hasNotFoundEdge = true;
 		} else {
 			isFacingRight = !isFacingRight;
 			transform.localScale = new Vector3(-transform.localScale.x, 1f, 1f);
