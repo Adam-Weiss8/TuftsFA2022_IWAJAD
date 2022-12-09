@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 3089800247866243816}
   - component: {fileID: 3089800247866243813}
   - component: {fileID: 5134428890744544794}
+  - component: {fileID: 1726016570208479977}
   m_Layer: 6
   m_Name: Enemy1
   m_TagString: Untagged
@@ -208,8 +209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  speed: 3
-  startDazedTime: 0
 --- !u!114 &3089800247866243813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  PlayerHealth: {fileID: 0}
+  PlayerHealth: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
 --- !u!114 &5134428890744544794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,4 +244,25 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   groundCheck: {fileID: 3089800246606220307}
-  damage: 10
+  startDazedTime: 0
+--- !u!114 &1726016570208479977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3089800247866243819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7506da23be3ac48af47bae2e88cf4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  damage: 0
+  playerHealth: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+  stoppingDistance: 3
+  retreatDistance: 0
+  startTimeBtwShots: 2
+  projectile: {fileID: 5964792148829397884, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
+  attackRange: 10
+  isAttacking: 0

@@ -24566,22 +24566,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 957393271}
     m_Modifications:
-    - target: {fileID: 3089800246606220308, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3089800247866243812, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: bodyCollider
-      value: 
-      objectReference: {fileID: 1087050848}
-    - target: {fileID: 3089800247866243813, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: PlayerHealth
-      value: 
-      objectReference: {fileID: 985337940}
-    - target: {fileID: 3089800247866243816, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 1087050849}
     - target: {fileID: 3089800247866243817, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -24627,45 +24611,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089800247866243819, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3089800247866243819, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
       propertyPath: m_Name
       value: Shooter_Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 3089800247866243819, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: m_TagString
-      value: enemyShooter
-      objectReference: {fileID: 0}
-    - target: {fileID: 5134428890744544794, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 1087050849}
-    - target: {fileID: 5134428890744544794, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5134428890744544794, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-      propertyPath: startDazedTime
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3089800247866243812, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
 --- !u!4 &1087050847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089800247866243817, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-  m_PrefabInstance: {fileID: 1087050846}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1087050848 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 3089800247866243811, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-  m_PrefabInstance: {fileID: 1087050846}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1087050849 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3089800247866243815, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
   m_PrefabInstance: {fileID: 1087050846}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1109409468
@@ -24805,6 +24758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3089800247866243812, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
+    - {fileID: 1726016570208479977, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
 --- !u!1 &1265747773
 GameObject:
@@ -24864,31 +24818,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1319679678 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3089800247866243819, guid: 8a38772aed2f13744b0d2e0bb5dceafa, type: 3}
-  m_PrefabInstance: {fileID: 1087050846}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1319679684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319679678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c7506da23be3ac48af47bae2e88cf4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  stoppingDistance: 4
-  retreatDistance: 3
-  startTimeBtwShots: 2
-  projectile: {fileID: 5964792148829397884, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
-  EnemyLives: 30
-  attackRange: 20
-  isAttacking: 1
 --- !u!1 &1434342440
 GameObject:
   m_ObjectHideFlags: 0

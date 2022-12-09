@@ -73,10 +73,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 5
+  speed: 10
   hitEffectAnim: {fileID: 0}
-  SelfDestructTime: 2
-  PlayerHealth: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+  SelfDestructTime: 3
+  playerHealth: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
 --- !u!1 &6026439527112880890
 GameObject:
   m_ObjectHideFlags: 0
