@@ -18,6 +18,7 @@ public class PlayerRespawn : MonoBehaviour {
                             Debug.Log("I am going back to the last spawn point");
                             Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
                             gameObject.transform.position = pSpn2;
+                            PlayerHealth.health = 1;
                      }
               }
        }

@@ -412,6 +412,7 @@ GameObject:
   - component: {fileID: 6471965715540628401}
   - component: {fileID: 6471965715540628400}
   - component: {fileID: 6471965715540628407}
+  - component: {fileID: 6471965716524647397}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -526,7 +527,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 78.5955
+  m_Distance: 127.9088
   m_DampingRatio: 1
   m_Frequency: 1
 --- !u!114 &6471965715540628403
@@ -626,8 +627,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
-  health: 0
+  health: -40
   Respawn: 0
+--- !u!114 &6471965716524647397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6471965715540628393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5604173601c67144ba7f2e90625a48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHealth: {fileID: 6471965715540628407}
+  pSpawn: {fileID: 0}
 --- !u!1 &6471965715642124699
 GameObject:
   m_ObjectHideFlags: 0

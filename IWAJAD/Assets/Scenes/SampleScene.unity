@@ -16249,11 +16249,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &175970150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5964792148829397884, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
-  m_PrefabInstance: {fileID: 452154739409155255}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &231795353
 GameObject:
   m_ObjectHideFlags: 0
@@ -24558,7 +24553,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
   m_PrefabInstance: {fileID: 6471965716524647395}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6471965716524647396}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14d90955c923be6479b1e03d70490387, type: 3}
@@ -24890,9 +24885,9 @@ MonoBehaviour:
   stoppingDistance: 4
   retreatDistance: 3
   startTimeBtwShots: 2
-  projectile: {fileID: 175970150}
+  projectile: {fileID: 5964792148829397884, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
   EnemyLives: 30
-  attackRange: 10
+  attackRange: 20
   isAttacking: 1
 --- !u!1 &1434342440
 GameObject:
@@ -37624,7 +37619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed8fac572b1f764d91475c4d5072b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 985337935}
+  playerPos: {fileID: 6471965715540628396, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
   pSpawnFall: {fileID: 1894611131}
 --- !u!1 &2023946245
 GameObject:
@@ -37677,7 +37672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023946245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -110.97, y: 2.72, z: 0}
+  m_LocalPosition: {x: -110.896, y: 3.102, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -37707,10 +37702,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyProjectile
       objectReference: {fileID: 0}
-    - target: {fileID: 7888764663965049109, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
-      propertyPath: PlayerHealth
-      value: 
-      objectReference: {fileID: 985337940}
     - target: {fileID: 8504351989271239788, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -38018,24 +38009,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6471965716524647397, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: pSpawn
+      value: 
+      objectReference: {fileID: 1894611131}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
---- !u!1 &6471965716524647396 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6471965715540628393, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
-  m_PrefabInstance: {fileID: 6471965716524647395}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6471965716524647397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6471965716524647396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5604173601c67144ba7f2e90625a48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerHealth: {fileID: 985337940}
-  pSpawn: {fileID: 1894611131}

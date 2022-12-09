@@ -30,14 +30,17 @@ public class EnemyProjectile : MonoBehaviour {
                      PlayerHealth.TakeDamage(damage);
               }
               if (collision.gameObject.tag != "enemyShooter") {
-                     GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
-                     Destroy (animEffect, 0.5f);
-                     Destroy (gameObject);
+                     Debug.Log("Should self-destruct");
+                     //GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
+                     //Destroy (animEffect, 0.5f);
+                     gameObject.SetActive(false);
+                     //Destroy (gameObject);
               }
        }
 
        IEnumerator selfDestruct(){
               yield return new WaitForSeconds(SelfDestructTime);
-              Destroy (gameObject);
+              gameObject.SetActive(false);
+              //Destroy (gameObject);
        }
 }
