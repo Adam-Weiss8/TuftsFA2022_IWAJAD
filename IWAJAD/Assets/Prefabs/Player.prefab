@@ -629,6 +629,7 @@ MonoBehaviour:
   maxHealth: 1
   health: -1
   Respawn: 0
+  PlayerRespawn: {fileID: 6471965716524647397}
 --- !u!114 &6471965716524647397
 MonoBehaviour:
   m_ObjectHideFlags: 0

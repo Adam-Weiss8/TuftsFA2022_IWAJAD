@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 1;
     public int health;
     public int Respawn;
+    public PlayerRespawn PlayerRespawn;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0) {
             health = -1;
             Debug.Log("I should die");
+            PlayerRespawn.respawn();
         }
     }
 }

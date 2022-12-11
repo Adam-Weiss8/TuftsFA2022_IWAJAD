@@ -13,6 +13,7 @@ public class PlayerRespawn : MonoBehaviour {
 
        void Update() {
               if (pSpawn != null){
+                     Debug.Log("Health: " + PlayerHealth.health);
                      if (PlayerHealth.health <= 0){
                             Debug.Log("IN RESPAWN HEALTH <= 0");
                             //comment out lines from GameHandler about EndLose screen
@@ -24,6 +25,18 @@ public class PlayerRespawn : MonoBehaviour {
               }
        }
 
+       public void respawn() {
+              if (pSpawn != null){
+                     if (PlayerHealth.health <= 0){
+                            Debug.Log("IN RESPAWN HEALTH <= 0");
+                            //comment out lines from GameHandler about EndLose screen
+                            Debug.Log("I am going back to the last spawn point");
+                            Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
+                            gameObject.transform.position = pSpn2;
+                            PlayerHealth.health = 1;
+                     }
+              }
+       }
        public void OnTriggerEnter2D(Collider2D other) {
               if (other.gameObject.tag == "Checkpoint"){
                             pSpawn = other.gameObject.transform;

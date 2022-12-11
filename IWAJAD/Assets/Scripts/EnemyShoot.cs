@@ -71,12 +71,12 @@ public class EnemyShoot : MonoBehaviour {
                      // }
 
                      //Flip enemy to face player direction. Wrong direction? Swap the * -1.
-                     if (EnemyPatrolNew.hasNotFoundEdge)
-                     if (player.position.x > gameObject.transform.position.x){
-                            gameObject.transform.localScale = new Vector2(scaleX, gameObject.transform.localScale.y);
-                    } else {
-                             gameObject.transform.localScale = new Vector2(scaleX * -1, gameObject.transform.localScale.y);
-                     }
+              //        if (EnemyPatrolNew.hasNotFoundEdge)
+              //        if (player.position.x > gameObject.transform.position.x){
+              //               gameObject.transform.localScale = new Vector2(scaleX, gameObject.transform.localScale.y);
+              //       } else {
+              //                gameObject.transform.localScale = new Vector2(scaleX * -1, gameObject.transform.localScale.y);
+              //        }
 
                      //Timer for shooting projectiles
                      if (timeBtwShots <= 0) {
