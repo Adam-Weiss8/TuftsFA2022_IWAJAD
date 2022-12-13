@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5880676859532773782}
   - component: {fileID: 5880676859532773781}
   - component: {fileID: 5880676859532773776}
+  - component: {fileID: 5394708925062210602}
   m_Layer: 0
   m_Name: PortalToNextLevel
   m_TagString: Untagged
@@ -132,3 +133,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.087532, y: 2.1544287}
   m_EdgeRadius: 0
+--- !u!114 &5394708925062210602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5880676859532773780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d753a3aa07d5cbf42ab66f4bb82e9f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: 
