@@ -10,6 +10,7 @@ TagManager:
   - PauseMenuSlider
   - enemyShooter
   - enemy
+  - death
   layers:
   - Default
   - TransparentFX

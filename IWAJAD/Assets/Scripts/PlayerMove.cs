@@ -26,6 +26,8 @@ public class PlayerMove : MonoBehaviour
     public GameObject grappleHook;
     private bool isGrapple;
 
+    public PlayerHealth PlayerHealth;
+
 
     void Start()
     {
@@ -117,6 +119,10 @@ public class PlayerMove : MonoBehaviour
                     rb.velocity = new Vector2(rb.velocity.x, -0.5f);
                 }
             }
+        }
+
+        if (collision.gameObject.CompareTag("death")) {
+            PlayerHealth.TakeDamage(1);
         }
         
     }
