@@ -15,6 +15,7 @@ public class PlayerMove : MonoBehaviour
     public float wallJumpX;
     public float wallJumpY;
     public float health;
+    public float maxJumpVelo;
 
     //player rigidbody
     private Rigidbody2D rb;
@@ -88,7 +89,7 @@ public class PlayerMove : MonoBehaviour
             anim.SetTrigger("idle");
         }
 
-        if (canJump && jumpInput == 1) {
+        if (canJump && jumpInput == 1 && rb.velocity.y < maxJumpVelo) {
             anim.SetTrigger("jump");
             rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             canJump = false;

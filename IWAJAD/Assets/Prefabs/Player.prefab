@@ -527,7 +527,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 15.492983
+  m_Distance: 78.5955
   m_DampingRatio: 1
   m_Frequency: 1
 --- !u!114 &6471965715540628403
@@ -543,10 +543,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walksp: 5
-  jumpHeight: 3
+  jumpHeight: 5
   wallJumpX: 2
   wallJumpY: 1
   health: 0
+  maxJumpVelo: 2
   anim: {fileID: 6471965715540628401}
   grappleHook: {fileID: 6471965715784906912}
   PlayerHealth: {fileID: 6471965715540628407}

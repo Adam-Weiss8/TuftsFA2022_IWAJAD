@@ -702,7 +702,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: m_Distance
-      value: 2.1231284
+      value: 2.8813863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628403, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: jumpHeight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628403, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: maxJumpVelo
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
@@ -797,6 +805,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5394708925062210602, guid: 8e198f63e3e696d44a1053216e6af670, type: 3}
+      propertyPath: nextScene
+      value: jakeDreamWorld
+      objectReference: {fileID: 0}
     - target: {fileID: 5880676859532773780, guid: 8e198f63e3e696d44a1053216e6af670, type: 3}
       propertyPath: m_Name
       value: PortalToNextLevel
