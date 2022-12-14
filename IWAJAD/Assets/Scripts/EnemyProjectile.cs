@@ -10,11 +10,12 @@ public class EnemyProjectile : MonoBehaviour {
        private Vector2 target;
        //public GameObject hitEffectAnim;
        public float SelfDestructTime = 2.0f;
-       public PlayerHealth PlayerHealth;
+       private PlayerHealth PlayerHealth;
 
        void Start() {
              //NOTE: transform gets location, but we need Vector2 for direction, so we can use MoveTowards.
              playerTrans = GameObject.FindGameObjectWithTag("Player").transform;
+             PlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
              target = new Vector2(playerTrans.position.x, playerTrans.position.y);
 
              StartCoroutine(selfDestruct());

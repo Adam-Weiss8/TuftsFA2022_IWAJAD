@@ -27,12 +27,13 @@ public class PlayerMove : MonoBehaviour
     public GameObject grappleHook;
     private bool isGrapple;
 
-    public PlayerHealth PlayerHealth;
+    private PlayerHealth PlayerHealth;
 
 
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        PlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         canJump = true;
         isGrapple = false;
     }

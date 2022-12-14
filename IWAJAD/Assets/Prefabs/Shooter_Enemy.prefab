@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 8438518530738277886}
   m_Layer: 6
   m_Name: Shooter_Enemy
-  m_TagString: Untagged
+  m_TagString: enemyShooter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  PlayerHealth: {fileID: 0}
 --- !u!114 &7858159709078707064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,10 +259,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7506da23be3ac48af47bae2e88cf4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
   stoppingDistance: 4
   retreatDistance: 3
-  startTimeBtwShots: 2
+  startTimeBtwShots: 3
   projectile: {fileID: 7547186750028159053, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
   EnemyPatrolNew: {fileID: 0}
   EnemyLives: 30
