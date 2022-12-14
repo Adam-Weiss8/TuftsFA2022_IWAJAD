@@ -32,18 +32,17 @@ public class EnemyProjectile : MonoBehaviour {
                      //Debug.Log("HIT PLAYER");
                      PlayerHealth.TakeDamage(damage);
                      gameObject.SetActive(false);
+              } else if (collision.gameObject.tag != "enemyShooter") {
+                     //GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
+                     //Destroy (animEffect, 0.5f);
+                     //Debug.Log("HIT SOMETHING OTHER THAN PLAYER");
+                     gameObject.SetActive(false);
               }
-              // } else if (collision.gameObject.tag != "enemyShooter") {
-              //        //GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
-              //        //Destroy (animEffect, 0.5f);
-              //        //Debug.Log("HIT SOMETHING OTHER THAN PLAYER");
-              //        // gameObject.SetActive(false);
-              // }
        }
 
        IEnumerator selfDestruct(){
               yield return new WaitForSeconds(SelfDestructTime);
-              Debug.Log("SELF DESTRUCTING");
+              //Debug.Log("SELF DESTRUCTING");
               gameObject.SetActive(false);
        }
 }
