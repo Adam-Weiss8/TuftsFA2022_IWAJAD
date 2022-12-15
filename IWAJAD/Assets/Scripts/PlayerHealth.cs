@@ -13,15 +13,20 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        Debug.Log("Health was initialized to: " + health);
+    }
+
+    void Update() {
+        Debug.Log("Health in PH is: " + health);
     }
 
     public void TakeDamage(int damage) {
         Debug.Log("I have taken damage");
         health -= damage;
         if (health <= 0) {
-            health = -1;
             Debug.Log("I should die");
             PlayerRespawn.respawn();
+            health = 1;
         }
     }
 }

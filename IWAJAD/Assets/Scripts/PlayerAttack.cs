@@ -27,7 +27,6 @@ public class PlayerAttack : MonoBehaviour{
       }
 
       void Attack(){
-            Debug.Log("ATTACKING");
             //anim.SetTrigger ("Melee");
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPt.position, attackRange, enemyLayers);
            
