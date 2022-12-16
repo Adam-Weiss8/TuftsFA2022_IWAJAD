@@ -527,7 +527,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 15.492983
+  m_Distance: 58.612576
   m_DampingRatio: 1
   m_Frequency: 1
 --- !u!114 &6471965715540628403
@@ -627,10 +627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d90955c923be6479b1e03d70490387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 5
   health: -1
   Respawn: 0
   PlayerRespawn: {fileID: 6471965716524647397}
+  HealthBar: {fileID: 0}
 --- !u!114 &6471965716524647397
 MonoBehaviour:
   m_ObjectHideFlags: 0

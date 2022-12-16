@@ -17,7 +17,7 @@ public class PlayerRespawn : MonoBehaviour {
                             //comment out lines from GameHandler about EndLose screen
                             Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
                             gameObject.transform.position = pSpn2;
-                            PlayerHealth.health = 1;
+                            PlayerHealth.health = 5;
                      }
               }
        }
@@ -28,7 +28,7 @@ public class PlayerRespawn : MonoBehaviour {
                             //comment out lines from GameHandler about EndLose screen
                             Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
                             gameObject.transform.position = pSpn2;
-                            PlayerHealth.health = 1;
+                            PlayerHealth.health = 5;
                      }
               }
        }

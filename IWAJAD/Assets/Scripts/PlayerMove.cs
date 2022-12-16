@@ -124,7 +124,8 @@ public class PlayerMove : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("death")) {
-            PlayerHealth.TakeDamage(1);
+            Debug.Log("Found Death block");
+            PlayerHealth.TakeDamage(5);
         }
         
     }

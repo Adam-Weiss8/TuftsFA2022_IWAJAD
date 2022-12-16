@@ -108,12 +108,12 @@ public class EnemyShoot : MonoBehaviour {
        IEnumerator HitEnemy(){
               // color values are R, G, B, and alpha, each divided by 100
               rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
-              if (EnemyLives < 1){
-                     //gameControllerObj.AddScore (5);
-                     Debug.Log("HERE");
-                     Destroy(gameObject);
-              }
-              else yield return new WaitForSeconds(0.5f);
+              // if (EnemyLives < 1){
+              //        //gameControllerObj.AddScore (5);
+              //        Debug.Log("HERE");
+              //        Destroy(gameObject);
+              // }
+              yield return new WaitForSeconds(0.5f);
               rend.material.color = Color.white;
        }
 

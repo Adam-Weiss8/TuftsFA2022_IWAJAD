@@ -5,15 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 1;
-    public int health;
+    public int maxHealth = 3;
+    public int health = 3;
     public int Respawn;
     public PlayerRespawn PlayerRespawn;
+    private string sceneName;
+    public Bar HealthBar;
+    private Renderer rend;
 
     void Start()
     {
         health = maxHealth;
         Debug.Log("Health was initialized to: " + health);
+        Scene currentScene = SceneManager.GetActiveScene ();
+		sceneName = currentScene.name;
+        HealthBar.SetMaxHealth(health);
+        rend = GetComponentInChildren<Renderer> ();
     }
 
     void Update() {
@@ -22,11 +29,30 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage) {
         Debug.Log("I have taken damage");
+        StopCoroutine("HitEnemy");
+        StartCoroutine("HitEnemy");
         health -= damage;
+        HealthBar.SetHealth(health);
         if (health <= 0) {
             Debug.Log("I should die");
-            PlayerRespawn.respawn();
-            health = 1;
+            if(sceneName == "BossBattle 1") {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            } else {
+                PlayerRespawn.respawn();
+                HealthBar.SetMaxHealth(health);
+            }
         }
     }
+
+    IEnumerator HitEnemy(){
+              // color values are R, G, B, and alpha, each divided by 100
+              rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
+              // if (EnemyLives < 1){
+              //        //gameControllerObj.AddScore (5);
+              //        Debug.Log("HERE");
+              //        Destroy(gameObject);
+              // }
+              yield return new WaitForSeconds(0.5f);
+              rend.material.color = Color.white;
+       }
 }
