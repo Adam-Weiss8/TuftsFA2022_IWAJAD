@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
 		Scene currentScene = SceneManager.GetActiveScene ();
 		sceneName = currentScene.name;
 		if (sceneName == "BossBattle 1" || sceneName == "BossBattle 2") {
+			Debug.Log("Sets max health");
 			HealthBar.SetMaxHealth(health);
 		}
 		rend = GetComponentInChildren<Renderer> ();
@@ -26,13 +27,12 @@ public class Enemy : MonoBehaviour
     
     void Update()
     {
-		if (sceneName == "BossBattle 1" || sceneName == "BossBattle 2") {
-			Debug.Log("PH from enemy: " + PlayerHealth.health);
-			if(PlayerHealth.health <= 0) {
-				health = originalHealth;
-				HealthBar.SetMaxHealth(health);
-			}
-		}
+		// if (sceneName == "BossBattle 1" || sceneName == "BossBattle 2") {
+		// 	if(PlayerHealth.health <= 0) {
+		// 		health = originalHealth;
+		// 		HealthBar.SetMaxHealth(health);
+		// 	}
+		// }
 		if (sceneName == "BossBattle 1") {
 			if (health <= 100) {
 				StopCoroutine("HitEnemy");
@@ -89,6 +89,9 @@ public class Enemy : MonoBehaviour
 
 	public void ResetHealth() {
 		health = originalHealth;
+		if (sceneName == "BossBattle 1" || sceneName == "BossBattle 2") {
+			HealthBar.SetMaxHealth(health);
+		}
 	}
 }
 

@@ -756,6 +756,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7858159709078707010, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5550907
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707010, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5550907
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707010, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: m_Color.r
+      value: 0.990566
+      objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707011, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: attackRange
       value: 20
@@ -786,19 +798,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalScale.x
-      value: -3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 202.28
+      value: 201.98
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.86
+      value: -11.16
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -59448,7 +59460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.4660377, b: 0.4660377, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
