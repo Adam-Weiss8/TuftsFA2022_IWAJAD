@@ -41,11 +41,14 @@ public class Enemy : MonoBehaviour
     			StartCoroutine("HitEnemy");
 				StopCoroutine("HitEnemy");
         		StartCoroutine("HitEnemy");
-				Destroy(gameObject);
+				gameObject.SetActive(false);
 			}
 		}
 		if (health <= 0) {
-			Destroy(gameObject);
+			// Add the enemy to the player's dictionary of killed enemies
+        	PlayerController player = GameObject.FindObjectOfType<PlayerController>();
+        	player.killedEnemies.Add(gameObject, 0);
+			gameObject.SetActive(false);
 		}
     }
 	
@@ -70,5 +73,13 @@ public class Enemy : MonoBehaviour
               yield return new WaitForSeconds(0.5f);
               rend.material.color = Color.white;
        }
+
+	public void RevertColor() {
+		rend.material.color = Color.white;
+	}
+
+	public void ResetHealth() {
+		health = originalHealth;
+	}
 }
 

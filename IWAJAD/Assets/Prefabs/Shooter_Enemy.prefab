@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604e1169be847f745969afe6067cb528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 1000
   HealthBar: {fileID: 0}
   PlayerHealth: {fileID: 0}
 --- !u!114 &7858159709078707065
@@ -267,7 +267,7 @@ MonoBehaviour:
   projectile: {fileID: 7547186750028159053, guid: 459ab429d052cb94fad2df437bd892b1, type: 3}
   EnemyPatrolNew: {fileID: 0}
   EnemyLives: 30
-  attackRange: 5
+  attackRange: 20
   isAttacking: 0
 --- !u!95 &8438518530738277886
 Animator:

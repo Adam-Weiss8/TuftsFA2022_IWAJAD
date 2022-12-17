@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     private string sceneName;
     public Bar HealthBar;
     private Renderer rend;
+    private PlayerController playerController;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
 		sceneName = currentScene.name;
         HealthBar.SetMaxHealth(health);
         rend = GetComponentInChildren<Renderer> ();
+        playerController = GameObject.FindObjectOfType<PlayerController>();
     }
 
     void Update() {
@@ -35,12 +37,9 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetHealth(health);
         if (health <= 0) {
             Debug.Log("I should die");
-            if(sceneName == "BossBattle 1") {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            } else {
-                PlayerRespawn.respawn();
-                HealthBar.SetMaxHealth(health);
-            }
+            playerController.OnDeath();
+            PlayerRespawn.respawn();
+            HealthBar.SetMaxHealth(health);
         }
     }
 
