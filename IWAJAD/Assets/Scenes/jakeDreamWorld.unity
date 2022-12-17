@@ -321,7 +321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: m_Distance
-      value: 78.98347
+      value: 85.997795
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: HealthBar

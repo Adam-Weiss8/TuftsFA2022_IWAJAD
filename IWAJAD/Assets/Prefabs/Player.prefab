@@ -528,7 +528,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 58.612576
+  m_Distance: 78.5955
   m_DampingRatio: 1
   m_Frequency: 1
 --- !u!114 &6471965715540628403
@@ -609,6 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a42e50bf5d5254198354b9db69758d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 6471965715540628401}
   attackPt: {fileID: 6471965715642124698}
   attackRange: 0.75
   attackRate: 2
