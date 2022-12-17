@@ -14,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 1c5462aa96b2e45edb668f9dc9d3f45c
+  - enabled: 1
+    path: Assets/Scenes/abby2dream.unity
+    guid: 75501889c1dd344aaa8052b9725cc289
+  - enabled: 1
+    path: Assets/Scenes/abbyDreamWorld.unity
+    guid: 7e2a6f43275574219b226281ccd38ba6
+  - enabled: 1
+    path: Assets/Scenes/BossBattle 1.unity
+    guid: 7a5c03168eca9894bb7e10cf9f0c1b40
+  - enabled: 1
+    path: Assets/Scenes/BossBattle 2.unity
+    guid: 46684a397d49a1041bc8d26ea0d622ea
+  - enabled: 1
+    path: Assets/Scenes/AdamReal.unity
+    guid: b41a5b3ffcef7d0448827d9303732167
+  - enabled: 1
+    path: Assets/Scenes/jakeDreamWorld.unity
+    guid: b36b88708080c6046bcca7f6b5fb13fc
   m_configObjects: {}
