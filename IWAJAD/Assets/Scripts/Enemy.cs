@@ -44,12 +44,21 @@ public class Enemy : MonoBehaviour
 				gameObject.SetActive(false);
 			}
 		}
+		if (health < originalHealth) {
+			PlayerController player = GameObject.FindObjectOfType<PlayerController>();
+			if (!player.killedEnemies.ContainsKey(gameObject)) {
+				player.killedEnemies.Add(gameObject, 0);
+			}
+		}
 		if (health <= 0) {
-			// Add the enemy to the player's dictionary of killed enemies
-        	PlayerController player = GameObject.FindObjectOfType<PlayerController>();
-        	player.killedEnemies.Add(gameObject, 0);
 			gameObject.SetActive(false);
 		}
+		// if (health <= 0) {
+		// 	// Add the enemy to the player's dictionary of killed enemies
+        // 	PlayerController player = GameObject.FindObjectOfType<PlayerController>();
+        // 	player.killedEnemies.Add(gameObject, 0);
+		// 	gameObject.SetActive(false);
+		// }
     }
 	
 	public void TakeDamage(int damage){
