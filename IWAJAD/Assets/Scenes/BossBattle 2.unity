@@ -756,26 +756,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7858159709078707010, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5550907
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858159709078707010, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5550907
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858159709078707010, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: m_Color.r
-      value: 0.990566
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858159709078707011, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: attackRange
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858159709078707014, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: health
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707014, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: HealthBar
       value: 
@@ -784,10 +764,6 @@ PrefabInstance:
       propertyPath: PlayerHealth
       value: 
       objectReference: {fileID: 567745733}
-    - target: {fileID: 7858159709078707064, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: speed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707066, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_Name
       value: Shooter_Enemy
@@ -795,14 +771,6 @@ PrefabInstance:
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_RootOrder
       value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.x

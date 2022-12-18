@@ -59,7 +59,7 @@ public class TutorialBlock : MonoBehaviour
         tutorialStyle.fontSize--;
 
         // Display the tutorial text on the screen using GUI.Label with the tutorialStyle
-        GUI.Label(new Rect(20, 10, 180, 50), tutorialText, tutorialStyle);
+        GUI.Label(new Rect(20, Screen.height - 60, 180, 50), tutorialText, tutorialStyle);
     }
 }
 
