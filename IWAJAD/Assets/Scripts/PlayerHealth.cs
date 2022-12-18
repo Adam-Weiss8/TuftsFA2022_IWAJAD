@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public int health = 3;
+    public int maxHealth = 5;
+    public int health = 5;
     public int Respawn;
     public PlayerRespawn PlayerRespawn;
     private string sceneName;
     public Bar HealthBar;
     private Renderer rend;
     private PlayerController playerController;
+    public AudioSource playerDeath;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetMaxHealth(health);
         rend = GetComponentInChildren<Renderer> ();
         playerController = GameObject.FindObjectOfType<PlayerController>();
+        playerDeath = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -37,9 +39,11 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetHealth(health);
         if (health <= 0) {
             Debug.Log("I should die");
+            playerDeath.Play();
             playerController.OnDeath();
             PlayerRespawn.respawn();
             HealthBar.SetMaxHealth(health);
+            Debug.Log("health bar set to " + health);
         }
     }
 

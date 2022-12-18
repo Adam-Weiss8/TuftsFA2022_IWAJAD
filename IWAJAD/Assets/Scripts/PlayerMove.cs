@@ -94,7 +94,7 @@ public class PlayerMove : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("ground")) {
+        if (collision.gameObject.CompareTag("ground") || collision.gameObject.CompareTag("enemy")) {
             canJump = true;
             anim.SetTrigger("idle");
         }

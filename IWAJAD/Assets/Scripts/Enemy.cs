@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
 	private int originalHealth;
 	private string sceneName;
 	private Renderer rend;
-	public AudioSource audioSource;
+	public AudioSource rat;
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
 		if (sceneName == "BossBattle 1" || sceneName == "BossBattle 2") {
 			Debug.Log("Sets max health");
 			HealthBar.SetMaxHealth(health);
-			audioSource = GetComponent<AudioSource>();
+			rat = GetComponent<AudioSource>();
 		}
 		rend = GetComponentInChildren<Renderer> ();
     }
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 		if (sceneName == "BossBattle 1" || sceneName == "BossBattle 2") {
 			if (health == originalHealth - 40 || health == originalHealth - 200 || health == originalHealth - 400
 				|| health == originalHealth - 600 || health == originalHealth - 800) {
-				audioSource.Play();
+				rat.Play();
 			}
 			if (sceneName == "BossBattle 1" && health <= 100) {
 				StopCoroutine("HitEnemy");
@@ -47,12 +47,13 @@ public class Enemy : MonoBehaviour
     			StartCoroutine("HitEnemy");
 				StopCoroutine("HitEnemy");
         		StartCoroutine("HitEnemy");
-				audioSource.Play();
+				rat.Play();
 				gameObject.SetActive(false);
+				SceneManager.LoadScene("BossBattle 2");
 			}
 			if (sceneName == "BossBattle 2" && health <= 0) {
-				audioSource.Play();
-				audioSource.Play();
+				rat.Play();
+				rat.Play();
 			}
 		}
 		if (health < originalHealth) {
