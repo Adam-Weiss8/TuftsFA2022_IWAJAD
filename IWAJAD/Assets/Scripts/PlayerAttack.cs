@@ -14,6 +14,7 @@ public class PlayerAttack : MonoBehaviour{
 
       void Start(){
            anim = gameObject.GetComponentInChildren<Animator>();
+           AudioSource trash = GetComponent<AudioSource>();
       }
 
       void Update(){
@@ -28,7 +29,7 @@ public class PlayerAttack : MonoBehaviour{
 
       void Attack(){
             anim.SetTrigger ("attack");
-        Debug.Log("hit animation");
+            Debug.Log("hit animation");
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPt.position, attackRange, enemyLayers);
            
             foreach(Collider2D enemy in hitEnemies){

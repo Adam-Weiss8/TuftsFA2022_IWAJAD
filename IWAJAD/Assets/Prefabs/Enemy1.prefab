@@ -243,6 +243,7 @@ MonoBehaviour:
   health: 100
   HealthBar: {fileID: 0}
   PlayerHealth: {fileID: 0}
+  rat: {fileID: 0}
 --- !u!114 &3089800247866243813
 MonoBehaviour:
   m_ObjectHideFlags: 0
