@@ -25,7 +25,6 @@ public class PlayerMove : MonoBehaviour
 
     //Grapple
     public GameObject grappleHook;
-    private bool isGrapple;
 
     private PlayerHealth PlayerHealth;
 
@@ -35,7 +34,7 @@ public class PlayerMove : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         PlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         canJump = true;
-        isGrapple = false;
+        
     }
 
    
@@ -57,13 +56,7 @@ public class PlayerMove : MonoBehaviour
             grappleHook.transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        if (Input.GetAxis("grapple") == 1)
-        {
-            isGrapple = true;
-        } else
-        {
-            isGrapple = false;
-        }
+    
 
         //handle gravity based on if the player is rising or falling
         if(rb.velocity.y < 0)

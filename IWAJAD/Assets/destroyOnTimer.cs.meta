@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: fa54149c2cd36eb479858d84fca2f324
+guid: 2461b1851d0ca4a4f86806fa1b263983
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - hitEffectAnim: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
