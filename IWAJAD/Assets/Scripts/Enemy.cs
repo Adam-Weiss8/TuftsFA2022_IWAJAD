@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour
         		StartCoroutine("HitEnemy");
 				rat.Play();
 				gameObject.SetActive(false);
+				SceneManager.LoadScene("BossBattle 2");
 			}
 			if (sceneName == "BossBattle 2" && health <= 0) {
 				rat.Play();

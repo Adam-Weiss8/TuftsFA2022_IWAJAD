@@ -43,6 +43,7 @@ public class PlayerHealth : MonoBehaviour
             playerController.OnDeath();
             PlayerRespawn.respawn();
             HealthBar.SetMaxHealth(health);
+            Debug.Log("health bar set to " + health);
         }
     }
 

@@ -623,6 +623,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.990566
       objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707011, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707011, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: startTimeBtwShots
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707014, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: HealthBar
       value: 
@@ -635,6 +643,10 @@ PrefabInstance:
       propertyPath: PlayerHealth
       value: 
       objectReference: {fileID: 567745733}
+    - target: {fileID: 7858159709078707065, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707066, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_Name
       value: Shooter_Enemy
