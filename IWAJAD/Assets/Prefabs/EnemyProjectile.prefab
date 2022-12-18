@@ -180,4 +180,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 5
+  hitEffectAnim: {fileID: 3509850140492185380, guid: 67fd475b6c978544eab1c2e88bfb6662, type: 3}
   SelfDestructTime: 2

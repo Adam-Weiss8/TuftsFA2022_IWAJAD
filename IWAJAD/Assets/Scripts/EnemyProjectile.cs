@@ -8,9 +8,11 @@ public class EnemyProjectile : MonoBehaviour {
        public float speed = 10f;
        private Transform playerTrans;
        private Vector2 target;
-       //public GameObject hitEffectAnim;
+       public GameObject hitEffectAnim;
        public float SelfDestructTime = 2.0f;
        private PlayerHealth PlayerHealth;
+       
+    
 
        void Start() {
              //NOTE: transform gets location, but we need Vector2 for direction, so we can use MoveTowards.
@@ -31,18 +33,27 @@ public class EnemyProjectile : MonoBehaviour {
               if (collision.gameObject.tag == "Player") {
                      //Debug.Log("HIT PLAYER");
                      PlayerHealth.TakeDamage(damage);
+            GameObject animEffect = Instantiate(hitEffectAnim, transform.position, Quaternion.identity);
+            Destroy(animEffect, 0.5f);
+            gameObject.SetActive(false);
+                  
+        } else if (collision.gameObject.tag != "enemyShooter") {
+                     GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
+                     Destroy (animEffect, 0.5f);
+                     Debug.Log("HIT SOMETHING OTHER THAN PLAYER");
                      gameObject.SetActive(false);
-              } else if (collision.gameObject.tag != "enemyShooter") {
-                     //GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
-                     //Destroy (animEffect, 0.5f);
-                     //Debug.Log("HIT SOMETHING OTHER THAN PLAYER");
-                     gameObject.SetActive(false);
-              }
+                   
+        }
        }
 
        IEnumerator selfDestruct(){
               yield return new WaitForSeconds(SelfDestructTime);
-              //Debug.Log("SELF DESTRUCTING");
-              gameObject.SetActive(false);
-       }
+        //Debug.Log("SELF DESTRUCTING");
+        GameObject animEffect = Instantiate(hitEffectAnim, transform.position, Quaternion.identity);
+        Destroy(animEffect, 0.5f);
+        gameObject.SetActive(false);
+          
+    }
+
+        
 }
