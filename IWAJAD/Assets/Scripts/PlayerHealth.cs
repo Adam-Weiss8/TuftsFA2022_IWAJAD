@@ -13,7 +13,8 @@ public class PlayerHealth : MonoBehaviour
     public Bar HealthBar;
     private Renderer rend;
     private PlayerController playerController;
-    public AudioSource playerDeath;
+    public AudioClip playerDeath;
+    private AudioSource playerAudio;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetMaxHealth(health);
         rend = GetComponentInChildren<Renderer> ();
         playerController = GameObject.FindObjectOfType<PlayerController>();
-        playerDeath = GetComponent<AudioSource>();
+        playerAudio = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -39,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetHealth(health);
         if (health <= 0) {
             Debug.Log("I should die");
-            playerDeath.Play();
+            playerAudio.PlayOneShot(playerDeath);
             playerController.OnDeath();
             PlayerRespawn.respawn();
             HealthBar.SetMaxHealth(health);

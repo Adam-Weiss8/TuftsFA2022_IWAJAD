@@ -11,16 +11,20 @@ public class PlayerAttack : MonoBehaviour{
       private float nextAttackTime = 0f;
       public int attackDamage = 40;
       public LayerMask enemyLayers;
+      private AudioSource playerAudio;
+      public AudioClip hitNoise;
+ 
 
       void Start(){
            anim = gameObject.GetComponentInChildren<Animator>();
-           AudioSource trash = GetComponent<AudioSource>();
-      }
+           playerAudio = GetComponent<AudioSource>();
+    }
 
       void Update(){
            if (Time.time >= nextAttackTime){
                   //if (Input.GetKeyDown(KeyCode.Space))
                  if (Input.GetAxis("attack") > 0){
+                        playerAudio.PlayOneShot(hitNoise);
                         Attack();
                         nextAttackTime = Time.time + 1f / attackRate;
                   }

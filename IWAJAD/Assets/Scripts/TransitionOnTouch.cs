@@ -11,8 +11,11 @@ public class TransitionOnTouch : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("Found player");
+            //Debug.Log("Found player");
+            GameObject music = GameObject.Find("MusicPlayer");
+            music.GetComponent<MusicPlayer>().SwitchSong();
             StartCoroutine(Transition());
+            
         }
     }
 
