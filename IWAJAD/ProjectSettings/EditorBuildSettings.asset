@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ivanaRealWorld.unity
     guid: 3d71b5959644740dfa5c9074ea04ec50
   - enabled: 1
-    path: Assets/Scenes/Level 5R.unity
+    path: Assets/Scenes/Level 3R.unity
     guid: 4a195a3b33dd38843a6dac6aeafd0ffc
   - enabled: 1
     path: Assets/Scenes/Level 9.unity

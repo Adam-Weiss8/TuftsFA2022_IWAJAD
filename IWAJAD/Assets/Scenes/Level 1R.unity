@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9133848792565823367, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
       propertyPath: tutorialText
-      value: I can swing from that platform with my yo-yo
+      value: I can swing from that platform with my yo-yo (left click)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
@@ -430,7 +430,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: 065f3b67370094d00baf18f06a994170, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -703,7 +703,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: 065f3b67370094d00baf18f06a994170, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1167,6 +1167,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7867fcbf5caeb4dbd08dcede3c8f9a, type: 3}
+--- !u!1001 &1457324664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9133848792565823360, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_Name
+      value: TutorialBlock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -80.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823365, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133848792565823367, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
+      propertyPath: tutorialText
+      value: Move using WASD
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
 --- !u!1 &1476914543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1691,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: 065f3b67370094d00baf18f06a994170, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
