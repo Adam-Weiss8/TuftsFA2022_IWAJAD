@@ -213,7 +213,7 @@ MonoBehaviour:
   health: 1000
   HealthBar: {fileID: 0}
   PlayerHealth: {fileID: 0}
-  audioSource: {fileID: 0}
+  rat: {fileID: 0}
 --- !u!114 &7858159709078707065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7506da23be3ac48af47bae2e88cf4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 8438518530738277886}
   speed: 1
   stoppingDistance: 4
   retreatDistance: 3

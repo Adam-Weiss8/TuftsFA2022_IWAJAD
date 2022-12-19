@@ -24,7 +24,8 @@ public class EnemyProjectile : MonoBehaviour {
        }
 
        void Update () {
-              transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
+              
+        transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
        }
 
        //if the bullet hits a collider, play the explosion animation, then destroy the effect and the bullet
