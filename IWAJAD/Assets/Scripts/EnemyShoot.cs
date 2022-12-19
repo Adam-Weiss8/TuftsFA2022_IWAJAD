@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour {
 
-      //public Animator anim;
+       public Animator anim;
        public float speed = 2f;
        public float stoppingDistance = 4f; // when enemy stops moving towards player
        public float retreatDistance = 3f; // when enemy moves away from approaching player
@@ -82,7 +82,7 @@ public class EnemyShoot : MonoBehaviour {
                      if (timeBtwShots <= 0) {
                             Debug.Log("SHOOTING!");
                             isAttacking = true;
-                            //anim.SetTrigger("Attack");
+                            anim.SetTrigger("Attack");
                             Instantiate (projectile, transform.position, Quaternion.identity);
                             timeBtwShots = startTimeBtwShots;
                      } else {
