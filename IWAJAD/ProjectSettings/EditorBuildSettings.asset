@@ -35,9 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 4D.unity
     guid: 4c03ea981a50d4a49b9db7f79626378b
-  - enabled: 1
-    path: Assets/Scenes/Level 3R.unity
-    guid: b41a5b3ffcef7d0448827d9303732167
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/ilona.unity
     guid: db2722d817691400f9a5afea89bba356
