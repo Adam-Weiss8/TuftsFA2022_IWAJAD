@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073a0087a4d1a9e4e9d15dd6eed72c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: abbyDreamWorld
+  sceneName: Level 5R
 --- !u!1 &274871376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,12 +2726,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.036766
+      value: 46.21
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.700066
+      value: 11.23
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3207,6 +3215,14 @@ PrefabInstance:
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707067, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31508,11 +31524,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5880676859532773783, guid: 8e198f63e3e696d44a1053216e6af670, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.64
+      value: 95.1
       objectReference: {fileID: 0}
     - target: {fileID: 5880676859532773783, guid: 8e198f63e3e696d44a1053216e6af670, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.55
+      value: 3.56
       objectReference: {fileID: 0}
     - target: {fileID: 5880676859532773783, guid: 8e198f63e3e696d44a1053216e6af670, type: 3}
       propertyPath: m_LocalPosition.z

@@ -19,7 +19,7 @@ public class menu_script : MonoBehaviour {
    
    public void loadFirstLevel() {
        startButton.SetActive(true);
-       SceneManager.LoadScene("SampleScene");
+       SceneManager.LoadScene("Level 1R");
    }
 
 

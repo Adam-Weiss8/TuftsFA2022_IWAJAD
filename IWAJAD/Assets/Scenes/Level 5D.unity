@@ -3944,7 +3944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073a0087a4d1a9e4e9d15dd6eed72c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: BossBattle 1
+  sceneName: Level 6
 --- !u!1 &1980728094
 GameObject:
   m_ObjectHideFlags: 0
