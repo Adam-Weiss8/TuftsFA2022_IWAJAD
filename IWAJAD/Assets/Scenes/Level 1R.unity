@@ -1254,6 +1254,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: Level 1D
       objectReference: {fileID: 0}
+    - target: {fileID: 4385522075506417458, guid: 780c835a8b89fe1419c933f083482b4d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4385522075506417459, guid: 780c835a8b89fe1419c933f083482b4d, type: 3}
       propertyPath: m_RootOrder
       value: 6

@@ -24,11 +24,50 @@ EditorBuildSettings:
     path: Assets/Scenes/BossBattle 1.unity
     guid: 7a5c03168eca9894bb7e10cf9f0c1b40
   - enabled: 1
+    path: Assets/Scenes/Level 4R.unity
+    guid: 33bedbe84016d49da9139908d3eca0fb
+  - enabled: 1
+    path: Assets/Scenes/Level 3D.unity
+    guid: 404a049e9b53b404cbdbb201565fcf22
+  - enabled: 1
     path: Assets/Scenes/BossBattle 2.unity
     guid: 46684a397d49a1041bc8d26ea0d622ea
   - enabled: 1
+    path: Assets/Scenes/Level 4D.unity
+    guid: 4c03ea981a50d4a49b9db7f79626378b
+  - enabled: 1
     path: Assets/Scenes/Level 3R.unity
     guid: b41a5b3ffcef7d0448827d9303732167
+  - enabled: 1
+    path: Assets/Scenes/ilona.unity
+    guid: db2722d817691400f9a5afea89bba356
+  - enabled: 1
+    path: Assets/Scenes/ivanaRealWorld.unity
+    guid: 3d71b5959644740dfa5c9074ea04ec50
+  - enabled: 1
+    path: Assets/Scenes/Level 5R.unity
+    guid: 4a195a3b33dd38843a6dac6aeafd0ffc
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: bd95ee07613aae1438feba14fd63da11
+  - enabled: 1
+    path: Assets/Scenes/Level 2D.unity
+    guid: 8442ca67eadf244f496d833927697e63
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: a10516c75d2c41946a2a6fdf50e4b51b
+  - enabled: 1
+    path: Assets/Scenes/Level 1R.unity
+    guid: e565e5a450db1f243a9202da488d2b35
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: e8508197f9c533849adbe74b1b531444
+  - enabled: 1
+    path: Assets/Scenes/abbyReal.unity
+    guid: 4c85c7751d7284786a24852bd7d7aac0
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 28794d2b8e3bb9f44a7fc32f153a18e7
   - enabled: 1
     path: Assets/Scenes/Level 5D.unity
     guid: b36b88708080c6046bcca7f6b5fb13fc
