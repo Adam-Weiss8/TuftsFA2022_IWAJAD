@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4385522075506417460}
   - component: {fileID: 4385522075506417461}
   - component: {fileID: 4385522075506417458}
-  - component: {fileID: 8825556794428865008}
+  - component: {fileID: 3025370736732558328}
   m_Layer: 0
   m_Name: bedToNextLevel
   m_TagString: Untagged
@@ -133,7 +133,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7507257, y: 0.2235434}
   m_EdgeRadius: 0
---- !u!114 &8825556794428865008
+--- !u!114 &3025370736732558328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4385522075506417462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d753a3aa07d5cbf42ab66f4bb82e9f28, type: 3}
+  m_Script: {fileID: 11500000, guid: 073a0087a4d1a9e4e9d15dd6eed72c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
