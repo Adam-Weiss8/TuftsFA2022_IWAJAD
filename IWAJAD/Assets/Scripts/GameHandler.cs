@@ -60,7 +60,9 @@ public class GameHandler : MonoBehaviour {
         public void RestartGame(){
             Time.timeScale = 1f;
             // Add commands to zero-out any scores or other stats before restarting
-            SceneManager.LoadScene("StartScreen");
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
+            // SceneManager.LoadScene("StartScreen");
         }
         public void QuitGame(){
               #if UNITY_EDITOR
