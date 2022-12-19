@@ -17,11 +17,19 @@ public class EnemyProjectile : MonoBehaviour {
        void Start() {
              //NOTE: transform gets location, but we need Vector2 for direction, so we can use MoveTowards.
              playerTrans = GameObject.FindGameObjectWithTag("Player").transform;
-             PlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
              target = new Vector2(playerTrans.position.x, playerTrans.position.y);
 
              StartCoroutine(selfDestruct());
+
+              //new code for trajectory:
+              Vector2 startPos = transform.position;
+              float distance = Vector2.Distance(startPos, target);
+              distance = distance * (10);
+              Vector2 difference = target - startPos;
+              difference = difference.normalized * distance;
+              target = (startPos + difference);
        }
+
 
        void Update () {
               
