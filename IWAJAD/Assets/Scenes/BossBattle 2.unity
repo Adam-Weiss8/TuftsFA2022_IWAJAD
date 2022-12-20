@@ -2078,13 +2078,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: m_Distance
-      value: 78.5955
+      value: 2.1231344
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 2068503116}
+    - target: {fileID: 6471965715784906912, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6471965716524647397, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: pSpawn
       value: 

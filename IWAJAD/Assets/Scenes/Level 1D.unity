@@ -1003,6 +1003,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: m_Anchor.x
       value: 0.74890137
       objectReference: {fileID: 0}
@@ -1012,7 +1016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: m_Distance
-      value: 2.8813863
+      value: 5.3371234
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628403, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: jumpHeight
@@ -1026,6 +1030,10 @@ PrefabInstance:
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 598028662}
+    - target: {fileID: 6471965715784906912, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6471965716524647397, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: pSpawn
       value: 

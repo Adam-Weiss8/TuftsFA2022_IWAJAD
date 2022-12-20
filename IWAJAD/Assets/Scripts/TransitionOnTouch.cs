@@ -14,11 +14,15 @@ public class TransitionOnTouch : MonoBehaviour
             //Debug.Log("Found player");
             GameObject music = GameObject.Find("MusicPlayer");
             music.GetComponent<MusicPlayer>().SwitchSong();
-            StartCoroutine(Transition());
+
+            SceneManager.LoadScene(sceneName);
+
+            //StartCoroutine(Transition());
             
         }
     }
 
+    /*
     IEnumerator Transition()
     {
         // You can use a built-in Unity function to fade to black over the course of a given time
@@ -43,4 +47,6 @@ public class TransitionOnTouch : MonoBehaviour
             yield return null;
         }
     }
+
+    */
 }
