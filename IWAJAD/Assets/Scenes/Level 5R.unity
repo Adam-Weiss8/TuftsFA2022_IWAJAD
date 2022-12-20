@@ -783,7 +783,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &885046123
 GameObject:
@@ -1511,6 +1511,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 177638961}
     m_Modifications:
+    - target: {fileID: 643510992530741971, guid: 4a09c112fe2d4415c9f0a8d472014653, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1349848822}
+    - target: {fileID: 643510992530741971, guid: 4a09c112fe2d4415c9f0a8d472014653, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Credits
+      objectReference: {fileID: 0}
+    - target: {fileID: 643510992530741971, guid: 4a09c112fe2d4415c9f0a8d472014653, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 643510992530741971, guid: 4a09c112fe2d4415c9f0a8d472014653, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7087608642137493113, guid: 4a09c112fe2d4415c9f0a8d472014653, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -36414,7 +36430,7 @@ Transform:
   - {fileID: 5673129181727528498}
   - {fileID: 7084511319994814447}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6968634814865365474
 Grid:

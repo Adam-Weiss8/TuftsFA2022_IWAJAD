@@ -18,18 +18,25 @@ public class menu_script : MonoBehaviour {
    }
    
    public void loadFirstLevel() {
+        Time.timeScale = 1f;
        startButton.SetActive(true);
        SceneManager.LoadScene("Level 1R");
    }
 
 
   public void loadMainMenuFunc() {
+    Time.timeScale = 1f;
        SceneManager.LoadScene("MainMenu");
    }
 
   public void resumeButtonFunc() {
        resumeButton.SetActive(true);
        SceneManager.LoadScene("SampleScene");
+   }
+
+   public void loadCreditsFunc() {
+        Time.timeScale = 1f;
+       SceneManager.LoadScene("Credits");
    }
 
   public void quitButtonFunc() {

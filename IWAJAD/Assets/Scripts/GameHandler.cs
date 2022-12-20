@@ -64,6 +64,12 @@ public class GameHandler : MonoBehaviour {
             SceneManager.LoadScene(scene.name);
             // SceneManager.LoadScene("StartScreen");
         }
+
+        public void Credits(){
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("Credits");
+        }
+
         public void QuitGame(){
               #if UNITY_EDITOR
               UnityEditor.EditorApplication.isPlaying = false;
