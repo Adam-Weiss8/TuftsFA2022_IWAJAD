@@ -55,7 +55,6 @@ public class Enemy : MonoBehaviour
 				rat.Play();
 				rat.Play();
 				gameObject.SetActive(false);
-				StartCoroutine("Wait");
 				SceneManager.LoadScene("Credits");
 			}
 		}
@@ -97,10 +96,6 @@ public class Enemy : MonoBehaviour
               yield return new WaitForSeconds(0.5f);
               rend.material.color = Color.white;
        }
-
-	IEnumerator Wait() {
-		yield return new WaitForSeconds(5);
-	}
 
 	public void RevertColor() {
 		rend.material.color = Color.white;
