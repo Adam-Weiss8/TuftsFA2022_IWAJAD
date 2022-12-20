@@ -859,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707014, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: health
-      value: 1000
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7858159709078707014, guid: ffc6158fdcfdede49b61cb1ebf4a38f7, type: 3}
       propertyPath: HealthBar
@@ -2084,6 +2084,14 @@ PrefabInstance:
     - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: m_Distance
       value: 78.5955
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628400, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: attackRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628400, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: attackRange
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: HealthBar
