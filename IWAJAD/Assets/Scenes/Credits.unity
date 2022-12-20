@@ -286,9 +286,9 @@ RectTransform:
   m_Children:
   - {fileID: 639987734}
   - {fileID: 1856713562}
-  - {fileID: 1698640694}
   - {fileID: 2052427878}
   - {fileID: 1402440466}
+  - {fileID: 1698640694}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -954,7 +954,7 @@ GameObject:
   - component: {fileID: 1402440468}
   - component: {fileID: 1402440467}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -969,15 +969,15 @@ RectTransform:
   m_GameObject: {fileID: 1402440465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 177638961}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435, y: -52}
+  m_AnchoredPosition: {x: 197, y: 44}
   m_SizeDelta: {x: 2388, y: 1668.5684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402440467
@@ -1195,7 +1195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7087608642387982683, guid: 4a09c112fe2d4415c9f0a8d472014653, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7087608642387982683, guid: 4a09c112fe2d4415c9f0a8d472014653, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1347,7 +1347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697411596244897803, guid: b2679f3c6965ceb4189e78c5306337f2, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8697411596244897803, guid: b2679f3c6965ceb4189e78c5306337f2, type: 3}
       propertyPath: m_AnchorMax.x
