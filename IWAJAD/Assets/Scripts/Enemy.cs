@@ -54,6 +54,9 @@ public class Enemy : MonoBehaviour
 			if (sceneName == "BossBattle 2" && health <= 0) {
 				rat.Play();
 				rat.Play();
+				gameObject.SetActive(false);
+				StartCoroutine("Wait");
+				SceneManager.LoadScene("Credits");
 			}
 		}
 		if (health < originalHealth) {
@@ -94,6 +97,10 @@ public class Enemy : MonoBehaviour
               yield return new WaitForSeconds(0.5f);
               rend.material.color = Color.white;
        }
+
+	IEnumerator Wait() {
+		yield return new WaitForSeconds(5);
+	}
 
 	public void RevertColor() {
 		rend.material.color = Color.white;
