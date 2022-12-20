@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Follow: {fileID: 513334460}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 6
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -939,7 +939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9133848792565823367, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
       propertyPath: tutorialText
-      value: Maybe I can run and grab the wall down there.
+      value: Maybe I can run and grab the wall down there. (hold jump to double jump)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8a70a0107b6c244b4fffd99154c857, type: 3}
@@ -1465,7 +1465,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

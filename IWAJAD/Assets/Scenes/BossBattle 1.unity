@@ -447,7 +447,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -571,6 +571,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 567745731}
+    - target: {fileID: 8131669536539553523, guid: 04bb6f2eb4868cc438f37d766d566f63, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04bb6f2eb4868cc438f37d766d566f63, type: 3}
 --- !u!224 &460706659 stripped
@@ -1701,6 +1705,14 @@ PrefabInstance:
     - target: {fileID: 6471965715540628399, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: m_Distance
       value: 9.7290745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628400, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: attackRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471965715540628400, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
+      propertyPath: attackRange
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6471965715540628407, guid: 986e11e5bfa2b0142ae449af7fb2ef13, type: 3}
       propertyPath: HealthBar
