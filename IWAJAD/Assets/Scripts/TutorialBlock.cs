@@ -43,7 +43,7 @@ public class TutorialBlock : MonoBehaviour
         tutorialStyle.wordWrap = true;
 
         // Set the font size to a small starting value
-        tutorialStyle.fontSize = 12;
+        tutorialStyle.fontSize = 16;
 
         // Calculate the size of the text with the current font size
         Vector2 textSize = tutorialStyle.CalcSize(new GUIContent(tutorialText));
@@ -58,10 +58,20 @@ public class TutorialBlock : MonoBehaviour
         // Decrement the font size to the last size that fit within the background box
         tutorialStyle.fontSize--;
 
+        // Calculate the width and height of the background box based on the screen size
+        float backgroundWidth = Screen.width * 0.2f;
+        float backgroundHeight = Screen.height * 0.2f;
+
+        // Calculate the position of the background box based on the screen size
+        float backgroundX = Screen.width * 0.8f - backgroundWidth / 2;
+        float backgroundY = Screen.height * 0.8f - backgroundHeight / 2;
+
         // Display the tutorial text on the screen using GUI.Label with the tutorialStyle
-        GUI.Label(new Rect(20, Screen.height - 60, 180, 50), tutorialText, tutorialStyle);
+        GUI.Label(new Rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight), tutorialText, tutorialStyle);
     }
 }
+
+
 
 
 
