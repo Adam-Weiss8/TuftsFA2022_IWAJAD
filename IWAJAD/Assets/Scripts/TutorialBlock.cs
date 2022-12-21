@@ -43,7 +43,7 @@ public class TutorialBlock : MonoBehaviour
         tutorialStyle.wordWrap = true;
 
         // Set the font size to a small starting value
-        tutorialStyle.fontSize = 16;
+        tutorialStyle.fontSize = 20;
 
         // Calculate the size of the text with the current font size
         Vector2 textSize = tutorialStyle.CalcSize(new GUIContent(tutorialText));
